@@ -2,7 +2,7 @@ fills-bitmaps
 fillBitmapSpanAA: bmFill from: leftX to: rightX at: yValue
 	| x dsX ds dtX dt deltaX deltaY bits xp yp bmWidth bmHeight fillValue baseShift cMask cShift idx aaLevel firstPixel lastPixel tileFlag |
 	<inline: false>
-	<var: #bits type: 'int *'>
+	<var: #bits type:'int *'>
 	bits := self loadBitsFrom: bmFill.
 	bits == nil ifTrue:[^nil].
 	bmWidth := self bitmapWidthOf: bmFill.

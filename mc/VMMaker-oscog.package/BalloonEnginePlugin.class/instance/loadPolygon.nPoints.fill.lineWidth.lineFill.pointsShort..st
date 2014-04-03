@@ -1,7 +1,7 @@
 shapes-polygons
 loadPolygon: points nPoints: nPoints fill: fillIndex lineWidth: lineWidth lineFill: lineFill pointsShort: isShort
 	| x0 y0 x1 y1 |
-	<var: #points type: 'int *'>
+	<var:#points type:'int *'>
 	isShort ifTrue:[
 		x0 := self loadPointShortAt: 0 from: points.
 		y0 := self loadPointShortAt: 1 from: points.

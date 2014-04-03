@@ -3,7 +3,7 @@ primitiveHashArray
 
 	| rcvr rcvrPtr length result |
 	<export: true>
-	<var: #rcvrPtr type: 'int *'>
+	<var: #rcvrPtr type:'int *'>
 	rcvr := interpreterProxy stackObjectValue: 0.
 	interpreterProxy failed ifTrue:[^nil].
 	interpreterProxy success: (interpreterProxy isWords: rcvr).

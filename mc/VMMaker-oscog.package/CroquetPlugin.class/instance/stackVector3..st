@@ -4,7 +4,7 @@ stackVector3: index
 	Return a pointer to the float data if successful, nil otherwise."
 	| oop |
 	<inline: false>
-	<returnTypeC: 'void*'>
+	<returnTypeC:'void*'>
 	oop := interpreterProxy stackObjectValue: index.
 	oop = nil ifTrue:[^nil].
 	((interpreterProxy isWords: oop) and:[(interpreterProxy slotSizeOf: oop) = 3])

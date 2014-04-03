@@ -16,6 +16,6 @@
 		"primitiveTransformVector3" : "jcg 6/18/2010 14:50",
 		"primitiveTransposeMatrix" : "jcg 6/18/2010 14:50",
 		"primitiveTriBoxIntersects" : "jcg 6/18/2010 14:50",
-		"stackMatrix:" : "ar (auto pragmas dtl 2010-09-27) 3/26/2006 22:32",
-		"stackVector3:" : "ar (auto pragmas dtl 2010-09-27) 3/18/2007 01:08",
+		"stackMatrix:" : "ar (auto pragmas 12/08) 3/26/2006 22:32",
+		"stackVector3:" : "ar (auto pragmas 12/08) 3/18/2007 01:08",
 		"transformMatrix:with:into:" : "jcg 6/18/2010 14:50" } }

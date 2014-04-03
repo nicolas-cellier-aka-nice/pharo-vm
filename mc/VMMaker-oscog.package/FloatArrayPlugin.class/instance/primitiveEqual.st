@@ -3,8 +3,8 @@ primitiveEqual
 
 	| rcvr arg rcvrPtr argPtr length |
 	<export: true>
-	<var: #rcvrPtr type: 'float *'>
-	<var: #argPtr type: 'float *'>
+	<var: #rcvrPtr type:'float *'>
+	<var: #argPtr type:'float *'>
 	arg := interpreterProxy stackObjectValue: 0.
 	rcvr := interpreterProxy stackObjectValue: 1.
 	interpreterProxy failed ifTrue:[^nil].

@@ -8,7 +8,7 @@
 		"ffiPushSignedByte:in:" : "eem 11/9/2009 11:41",
 		"ffiPushSignedChar:in:" : "eem 11/9/2009 11:43",
 		"ffiPushSignedInt:in:" : "eem 11/6/2009 15:20",
-		"ffiPushSignedLongLong:in:" : "EstebanLorenzano 11/19/2012 16:58",
+		"ffiPushSignedLongLong:in:" : "eem 11/6/2009 15:19",
 		"ffiPushSignedShort:in:" : "eem 11/9/2009 11:44",
 		"ffiPushSingleFloat:in:" : "eem 11/6/2009 16:37",
 		"ffiPushStructure:ofSize:typeSpec:ofLength:in:" : "eem 6/23/2012 18:53",

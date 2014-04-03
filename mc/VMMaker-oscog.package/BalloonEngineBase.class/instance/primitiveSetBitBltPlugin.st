@@ -3,7 +3,7 @@ primitiveSetBitBltPlugin
 	"Primitive. Set the BitBlt plugin to use."
 	| pluginName length ptr needReload |
 	<export: true>
-	<var: #ptr type: 'char *'>
+	<var: #ptr type:'char *'>
 	pluginName := interpreterProxy stackValue: 0.
 	"Must be string to work"
 	(interpreterProxy isBytes: pluginName) 

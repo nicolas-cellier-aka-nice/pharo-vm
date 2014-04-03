@@ -4,7 +4,7 @@ fillLinearGradientAA: fill ramp: ramp ds: deltaS dsX: dsX from: leftX to: rightX
 	| colorMask colorShift baseShift rampIndex ds rampSize x idx rampValue 
 	 aaLevel firstPixel lastPixel |
 	<inline: false>
-	<var: #ramp type: 'int *'>
+	<var: #ramp type:'int *'>
 
 	aaLevel := self aaLevelGet.
 	baseShift := self aaShiftGet.

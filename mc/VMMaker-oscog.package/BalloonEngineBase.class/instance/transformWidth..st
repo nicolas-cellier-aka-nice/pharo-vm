@@ -3,8 +3,8 @@ transformWidth: w
 	"Transform the given width"
 	| deltaX deltaY dstWidth dstWidth2 |
 	<inline: false>
-	<var: #deltaX type: 'double '>
-	<var: #deltaY type: 'double '>
+	<var: #deltaX type:'double '>
+	<var: #deltaY type:'double '>
 	w = 0 ifTrue:[^0].
 	self point1Get at: 0 put: 0.
 	self point1Get at: 1 put: 0.

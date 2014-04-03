@@ -1,8 +1,8 @@
 interpreter interface
 isIdentityMap: shifts with: masks
 	"Return true if shiftTable/maskTable define an identity mapping."
-	<var: #shifts type: 'int *'>
-	<var: #masks type: 'unsigned int *'>
+	<var: #shifts type:'int *'>
+	<var: #masks type:'unsigned int *'>
 	(shifts == nil or:[masks == nil]) ifTrue:[^true].
 	((shifts at: RedIndex) = 0 
 		and:[(shifts at: GreenIndex) = 0

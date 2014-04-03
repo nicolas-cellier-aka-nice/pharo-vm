@@ -1,8 +1,8 @@
 allocation
 allocateBitmapFill: cmSize colormap: cmBits
 	| fill fillSize cm |
-	<var: #cm type: 'int *'>
-	<var: #cmBits type: 'int *'>
+	<var:#cm type:'int *'>
+	<var:#cmBits type:'int *'>
 	fillSize := GBMBaseSize + cmSize.
 	(self allocateObjEntry: fillSize) ifFalse:[^0].
 	fill := objUsed.

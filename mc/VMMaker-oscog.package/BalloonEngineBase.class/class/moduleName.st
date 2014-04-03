@@ -1,3 +1,3 @@
-accessing
+translation
 moduleName
 	^'B2DPlugin'

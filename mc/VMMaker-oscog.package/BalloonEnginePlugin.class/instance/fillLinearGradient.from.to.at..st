@@ -3,7 +3,7 @@ fillLinearGradient: fill from: leftX to: rightX at: yValue
 	"Draw a linear gradient fill."
 	| x0 x1 ramp rampSize dsX ds x rampIndex |
 	<inline: false>
-	<var: #ramp type: 'int *'>
+	<var: #ramp type:'int *'>
 	ramp := self gradientRampOf: fill.
 	rampSize := self gradientRampLengthOf: fill.
 

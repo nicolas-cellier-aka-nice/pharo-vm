@@ -3,7 +3,7 @@ loadArrayTransformFrom: transformOop into: destPtr length: n
 	"Load a transformation from the given array."
 	| value |
 	<inline: false>
-	<var: #destPtr type: 'float *'>
+	<var: #destPtr type:'float *'>
 	0 to: n-1 do:[:i|
 		value := interpreterProxy fetchPointer: i ofObject: transformOop.
 		((interpreterProxy isIntegerObject: value) or:[interpreterProxy isFloatObject: value])

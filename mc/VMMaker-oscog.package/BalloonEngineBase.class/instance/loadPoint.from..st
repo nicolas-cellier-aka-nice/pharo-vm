@@ -3,7 +3,7 @@ loadPoint: pointArray from: pointOop
 	"Load the contents of pointOop into pointArray"
 	| value |
 	<inline: false>
-	<var: #pointArray type: 'int *'>
+	<var: #pointArray type:'int *'>
 	(interpreterProxy fetchClassOf: pointOop) = interpreterProxy classPoint 
 		ifFalse:[^interpreterProxy primitiveFail].
 	value := interpreterProxy fetchPointer: 0 ofObject: pointOop.

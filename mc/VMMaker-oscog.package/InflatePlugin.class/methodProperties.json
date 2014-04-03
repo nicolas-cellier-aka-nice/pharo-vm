@@ -7,6 +7,6 @@
 		"simulatorClass" : "LucFabresse 9/27/2013 10:04:12.418" },
 	"instance" : {
 		"primitiveInflateDecompressBlock" : "ar (auto pragmas 12/08) 12/22/1999 00:04",
-		"zipDecodeValueFrom:size:" : "tpr (auto pragmas dtl 2010-09-28) 12/29/2005 16:22",
+		"zipDecodeValueFrom:size:" : "tpr (auto pragmas 12/08) 12/29/2005 16:22",
 		"zipDecompressBlock" : "ar (auto pragmas 12/08) 12/22/1999 00:04",
 		"zipNextBits:" : "ar (auto pragmas 12/08) 12/21/1999 23:06" } }

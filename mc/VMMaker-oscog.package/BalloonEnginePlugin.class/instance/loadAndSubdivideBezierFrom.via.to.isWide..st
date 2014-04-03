@@ -4,9 +4,9 @@ loadAndSubdivideBezierFrom: point1 via: point2 to: point3 isWide: wideFlag
 	If wideFlag is set then make sure the curve is monoton in X."
 	| bz1 bz2 index2 index1 |
 	<inline: false>
-	<var: #point1 type: 'int *'>
-	<var: #point2 type: 'int *'>
-	<var: #point3 type: 'int *'>
+	<var: #point1 type:'int *'>
+	<var: #point2 type:'int *'>
+	<var: #point3 type:'int *'>
 	bz1 := self allocateBezierStackEntry.	
 	engineStopped ifTrue:[^0].
 	"Load point1/point2/point3 on the top of the stack"

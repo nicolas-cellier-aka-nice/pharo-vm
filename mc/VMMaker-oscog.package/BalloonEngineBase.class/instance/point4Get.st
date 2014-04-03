@@ -1,4 +1,4 @@
 accessing state
 point4Get
-	<returnTypeC: 'int *'>
+	<returnTypeC:'int *'>
 	^self cCoerce: workBuffer + GWPoint4 to:'int *'

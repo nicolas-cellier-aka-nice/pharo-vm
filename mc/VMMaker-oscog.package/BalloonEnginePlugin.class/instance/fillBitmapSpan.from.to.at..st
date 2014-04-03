@@ -2,7 +2,7 @@ fills-bitmaps
 fillBitmapSpan: bmFill from: leftX to: rightX at: yValue
 	| x x1 dsX ds dtX dt deltaX deltaY bits xp yp bmWidth bmHeight fillValue tileFlag |
 	<inline: false>
-	<var: #bits type: 'int *'>
+	<var: #bits type:'int *'>
 	self aaLevelGet = 1
 		ifFalse:[^self fillBitmapSpanAA: bmFill from: leftX to: rightX at: yValue].
 

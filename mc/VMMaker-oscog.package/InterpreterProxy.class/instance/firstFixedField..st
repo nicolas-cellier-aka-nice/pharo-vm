@@ -1,4 +1,4 @@
 object access
 firstFixedField: oop
-	<returnTypeC: 'void *'>
+	<returnTypeC:'void *'>
 	^CObjectAccessor on: oop

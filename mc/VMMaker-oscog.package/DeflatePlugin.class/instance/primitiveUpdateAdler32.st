@@ -3,8 +3,8 @@ primitiveUpdateAdler32
 	"Primitive. Update a 32bit CRC value."
 	| collection stopIndex startIndex length bytePtr s1 adler32 s2 b |
 	<export: true>
-	<var: #adler32 type: 'unsigned int '>
-	<var: #bytePtr type: 'unsigned char *'>
+	<var: #adler32 type:'unsigned int '>
+	<var: #bytePtr type:'unsigned char *'>
 	interpreterProxy methodArgumentCount = 4
 		ifFalse:[^interpreterProxy primitiveFail].
 	collection := interpreterProxy stackObjectValue: 0.

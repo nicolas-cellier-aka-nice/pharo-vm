@@ -3,7 +3,7 @@ loadColorTransformFrom: transformOop
 	"Load a 2x3 transformation matrix from the given oop.
 	Return true if the matrix is not nil, false otherwise"
 	| okay transform |
-	<var: #transform type: 'float *'>
+	<var: #transform type:'float *'>
 	transform := self colorTransform.
 	self hasColorTransformPut: 0.
 	okay := self loadTransformFrom: transformOop into: transform length: 8.

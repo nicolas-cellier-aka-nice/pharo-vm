@@ -3,7 +3,7 @@ checkCompressedFills: indexList
 	"Check if the indexList (containing fill handles) is okay."
 	| fillPtr length fillIndex |
 	<inline: false>
-	<var: #fillPtr type: 'int *'>
+	<var: #fillPtr type:'int *'>
 	"First check if the oops have the right format"
 	(interpreterProxy isWords: indexList) ifFalse:[^false].
 

@@ -1,7 +1,7 @@
 transforming
 transformPoint: point
 	"Transform the given point. If haveMatrix is true then use the current transformation."
-	<var: #point type: 'int *'>
+	<var:#point type:'int *'>
 	self hasEdgeTransform ifFalse:[
 		"Multiply each component by aaLevel and add a half pixel"
 		point at: 0 put: (point at: 0) + self destOffsetXGet * self aaLevelGet.

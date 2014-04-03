@@ -1,7 +1,7 @@
 transforming
 uncheckedTransformColor: fillIndex
 	| r g b a transform |
-	<var: #transform type: 'float *'>
+	<var: #transform type:'float *'>
 	(self hasColorTransform) ifFalse:[^fillIndex].
 	b := fillIndex bitAnd: 255.
 	g := (fillIndex >> 8) bitAnd: 255.

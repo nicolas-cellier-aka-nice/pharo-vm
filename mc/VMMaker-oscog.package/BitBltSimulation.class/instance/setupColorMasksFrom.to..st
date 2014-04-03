@@ -2,8 +2,8 @@ interpreter interface
 setupColorMasksFrom: srcBits to: targetBits
 	"Setup color masks for converting an incoming RGB pixel value from srcBits to targetBits."
 	| mask shifts masks deltaBits |
-	<var: #shifts declareC: 'static int shifts[4] = {0, 0, 0, 0}'>
-	<var: #masks declareC: 'static unsigned int masks[4] = {0, 0, 0, 0}'>
+	<var: #shifts declareC:'static int shifts[4] = {0, 0, 0, 0}'>
+	<var: #masks declareC:'static unsigned int masks[4] = {0, 0, 0, 0}'>
 	self cCode:'' inSmalltalk:[
 		shifts := CArrayAccessor on: (IntegerArray new: 4).
 		masks := CArrayAccessor on: (WordArray new: 4).

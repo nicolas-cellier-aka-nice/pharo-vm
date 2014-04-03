@@ -1,8 +1,8 @@
 transforming
 transformColor: fillIndex
 	| r g b a transform alphaScale |
-	<var: #transform type: 'float *'>
-	<var: #alphaScale type: 'double '>
+	<var: #transform type:'float *'>
+	<var: #alphaScale type:'double '>
 	(fillIndex = 0 or:[self isFillColor: fillIndex]) ifFalse:[^fillIndex].
 	b := fillIndex bitAnd: 255.
 	g := (fillIndex >> 8) bitAnd: 255.

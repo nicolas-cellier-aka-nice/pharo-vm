@@ -4,7 +4,7 @@ quickSortGlobalEdgeTable: array from: i to: j
 	sortBlock."
 	"Note: The original loop has been heavily re-written for C translation"
 	| di dij dj tt ij k l n tmp again before |
-	<var: #array type: 'int *'>
+	<var: #array type:'int *'>
 	<inline: false>
 	"The prefix d means the data at that index."
 	(n := j + 1  - i) <= 1 ifTrue: [^0].	"Nothing to sort." 

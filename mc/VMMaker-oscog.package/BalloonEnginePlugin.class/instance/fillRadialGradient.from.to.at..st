@@ -3,8 +3,8 @@ fillRadialGradient: fill from: leftX to: rightX at: yValue
 	"Draw a radial gradient fill."
 	| x x1 ramp rampSize dsX ds dtX dt length2 deltaX deltaY deltaST |
 	<inline: false>
-	<var: #ramp type: 'int *'>
-	<var: #deltaST type: 'int *'>
+	<var: #ramp type:'int *'>
+	<var: #deltaST type:'int *'>
 
 	ramp := self gradientRampOf: fill.
 	rampSize := self gradientRampLengthOf: fill.

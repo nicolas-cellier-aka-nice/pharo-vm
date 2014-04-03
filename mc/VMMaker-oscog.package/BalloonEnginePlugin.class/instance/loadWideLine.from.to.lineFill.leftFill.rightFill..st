@@ -2,8 +2,8 @@ lines-loading
 loadWideLine: lineWidth from: p1 to: p2 lineFill: lineFill leftFill: leftFill rightFill: rightFill
 	"Load a (possibly wide) line defined by the points p1 and p2"
 	| line offset |
-	<var: #p1 type: 'int *'>
-	<var: #p2 type: 'int *'>
+	<var: #p1 type:'int *'>
+	<var: #p2 type:'int *'>
 	(lineWidth = 0 or:[lineFill = 0])
 		ifTrue:[	line := self allocateLine.
 				offset := 0]

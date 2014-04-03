@@ -13,5 +13,4 @@ ffiPushSignedLongLongOop: oop in: calloutState
 	[value := interpreterProxy signed64BitValueOf: oop.
 	 interpreterProxy failed ifTrue:
 		[^FFIErrorCoercionFailed]]].
-
 	^self ffiPushSignedLongLong: value in: calloutState

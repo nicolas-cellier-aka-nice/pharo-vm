@@ -2,9 +2,9 @@ fills-gradient
 loadFillOrientation: fill from: point1 along: point2 normal: point3 width: fillWidth height: fillHeight
 	"Transform the points"
 	| dirX dirY nrmX nrmY dsLength2 dsX dsY dtLength2 dtX dtY |
-	<var: #point1 type: 'int *'>
-	<var: #point2 type: 'int *'>
-	<var: #point3 type: 'int *'>
+	<var: #point1 type:'int *'>
+	<var: #point2 type:'int *'>
+	<var: #point3 type:'int *'>
 
 	point2 at: 0 put: (point2 at: 0) + (point1 at: 0).
 	point2 at: 1 put: (point2 at: 1) + (point1 at: 1).

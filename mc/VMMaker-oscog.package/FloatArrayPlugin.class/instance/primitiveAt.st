@@ -3,8 +3,8 @@ primitiveAt
 
 	| index rcvr floatValue floatPtr |
 	<export: true>
-	<var: #floatValue type: 'double '>
-	<var: #floatPtr type: 'float *'>
+	<var: #floatValue type:'double '>
+	<var: #floatPtr type:'float *'>
 	index := interpreterProxy stackIntegerValue: 0.
 	rcvr := interpreterProxy stackObjectValue: 1.
 	interpreterProxy failed ifTrue:[^nil].

@@ -10,7 +10,7 @@ alphaSourceBlendBits8
 	| srcIndex dstIndex sourceWord srcAlpha destWord deltaX deltaY 
 	srcY dstY dstMask srcShift adjust mappingTable mapperFlags |
 	<inline: false>
-	<var: #mappingTable type: 'unsigned int *'>
+	<var: #mappingTable type:'unsigned int *'>
 	mappingTable := self default8To32Table.
 	mapperFlags := cmFlags bitAnd: ColorMapNewStyle bitInvert32.
 	deltaY := bbH + 1. "So we can pre-decrement"

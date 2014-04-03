@@ -5,10 +5,10 @@ transformPointX: xValue y: yValue into: dstPoint
 	the declarations and adding argument coercions at the appropriate points)"
 	| x y transform |
 	<inline: true>
-	<var: #dstPoint type: 'int *'>
+	<var: #dstPoint type:'int *'>
 	<var: #xValue type: 'double '>
 	<var: #yValue type: 'double '>
-	<var: #transform type: 'float *'>
+	<var: #transform type:'float *'>
 	transform := self edgeTransform.
 	x := ((((transform at: 0) * xValue) +
 		((transform at: 1) * yValue) +

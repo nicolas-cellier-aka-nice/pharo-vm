@@ -2,10 +2,10 @@ lines-loading
 loadLine: line from: point1 to: point2 offset: yOffset leftFill: leftFill rightFill: rightFill
 	"Load the line defined by point1 and point2."
 	| p1 p2 yDir |
-	<var: #point1 type: 'int *'>
-	<var: #point2 type: 'int *'>
-	<var: #p1 type: 'int *'>
-	<var: #p2 type: 'int *'>
+	<var: #point1 type:'int *'>
+	<var: #point2 type:'int *'>
+	<var: #p1 type:'int *'>
+	<var: #p2 type:'int *'>
 
 	(point1 at: 1) <= (point2 at: 1) 
 		ifTrue:[	p1 := point1.

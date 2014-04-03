@@ -1,4 +1,4 @@
 accessing state
 edgeTransform
-	<returnTypeC: 'float *'>
+	<returnTypeC:'float *'>
 	^self cCoerce: workBuffer + GWEdgeTransform to:'float *'

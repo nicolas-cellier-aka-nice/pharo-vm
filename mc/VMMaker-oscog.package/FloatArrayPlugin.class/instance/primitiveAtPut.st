@@ -4,7 +4,7 @@ primitiveAtPut
 	| value floatValue index rcvr floatPtr |
 	<export: true>
 	<var: #floatValue type: 'double '>
-	<var: #floatPtr type: 'float *'>
+	<var: #floatPtr type:'float *'>
 	value := interpreterProxy stackValue: 0.
 	(interpreterProxy isIntegerObject: value)
 		ifTrue:[floatValue := (interpreterProxy integerValueOf: value) asFloat]

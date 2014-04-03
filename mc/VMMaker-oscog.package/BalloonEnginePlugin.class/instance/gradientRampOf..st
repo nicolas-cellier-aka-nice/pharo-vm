@@ -1,5 +1,5 @@
 accessing gradients
 gradientRampOf: fill
-	<returnTypeC: 'int *'>
+	<returnTypeC:'int *'>
 
 	^objBuffer + fill +  GFRampOffset

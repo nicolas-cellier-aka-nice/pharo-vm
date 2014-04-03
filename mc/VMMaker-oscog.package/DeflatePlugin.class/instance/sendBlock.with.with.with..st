@@ -5,12 +5,12 @@ sendBlock: literalStream with: distanceStream with: litTree with: distTree
 		zipBitBuf, zipBitPos.
 	"
 	| oop litPos litLimit litArray distArray lit dist sum llBitLengths llCodes distBitLengths distCodes code extra litBlCount distBlCount |
-	<var: #litArray type: 'unsigned char *'>
-	<var: #distArray type: 'unsigned int *'>
-	<var: #llBitLengths type: 'unsigned int *'>
-	<var: #llCodes type: 'unsigned int *'>
-	<var: #distBitLengths type: 'unsigned int *'>
-	<var: #distCodes type: 'unsigned int *'>
+	<var: #litArray type:'unsigned char *'>
+	<var: #distArray type:'unsigned int *'>
+	<var: #llBitLengths type:'unsigned int *'>
+	<var: #llCodes type:'unsigned int *'>
+	<var: #distBitLengths type:'unsigned int *'>
+	<var: #distCodes type:'unsigned int *'>
 	oop := interpreterProxy fetchPointer: 0 ofObject: literalStream.
 	litPos := interpreterProxy fetchInteger: 1 ofObject: literalStream.
 	litLimit := interpreterProxy fetchInteger: 2 ofObject: literalStream.

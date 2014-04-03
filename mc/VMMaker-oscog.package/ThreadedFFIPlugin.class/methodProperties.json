@@ -43,7 +43,7 @@
 		"ffiPushSignedChar:in:" : "eem 11/11/2009 12:41",
 		"ffiPushSignedInt:in:" : "eem 11/11/2009 12:41",
 		"ffiPushSignedLongLong:in:" : "eem 11/6/2009 15:22",
-		"ffiPushSignedLongLongOop:in:" : "EstebanLorenzano 11/19/2012 16:50",
+		"ffiPushSignedLongLongOop:in:" : "eem 7/21/2011 14:10",
 		"ffiPushSignedShort:in:" : "eem 11/11/2009 12:41",
 		"ffiPushSingleFloat:in:" : "eem 11/11/2009 12:41",
 		"ffiPushString:OfLength:in:" : "eem 11/19/2009 11:03",

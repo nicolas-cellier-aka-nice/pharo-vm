@@ -11,7 +11,7 @@ stepToFirstBezierIn: bezier at: yValue
 	fwX1 fwX2 fwY1 fwY2 
 	fwDx fwDDx fwDy fwDDy |
 	<inline: false>
-	<var: #updateData type: 'int *'>
+	<var: #updateData type:'int *'>
 
 
 	"Do a quick check if there is anything at all to do"

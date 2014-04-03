@@ -4,8 +4,8 @@ fillRadialIncreasingAA: fill ramp: ramp deltaST: deltaST dsX: dsX dtX: dtX from:
 	| ds dt rampIndex rampValue length2 x nextLength rampSize lastLength 
 	aaLevel colorMask colorShift baseShift index firstPixel lastPixel |
 	<inline: false>
-	<var: #ramp type: 'int *'>
-	<var: #deltaST type: ' int *'>
+	<var: #ramp type:'int *'>
+	<var: #deltaST type:' int *'>
 
 	ds := (self cCoerce: deltaST to:'int*') at: 0.
 	dt := (self cCoerce: deltaST to:'int*') at: 1.

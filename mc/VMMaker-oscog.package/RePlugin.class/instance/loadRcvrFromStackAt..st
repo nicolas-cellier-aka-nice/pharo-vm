@@ -1,5 +1,5 @@
 rcvr linkage
 loadRcvrFromStackAt: stackInteger
 
-	<inline: true>
+	<inline:true>
 	rcvr := interpreterProxy stackObjectValue: stackInteger.

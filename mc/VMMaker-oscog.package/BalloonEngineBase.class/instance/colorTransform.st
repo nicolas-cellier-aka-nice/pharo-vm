@@ -1,4 +1,4 @@
 accessing state
 colorTransform
-	<returnTypeC: 'float *'>
+	<returnTypeC:'float *'>
 	^self cCoerce: workBuffer + GWColorTransform to:'float *'

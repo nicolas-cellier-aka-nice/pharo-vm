@@ -1,4 +1,4 @@
 accessing bitmaps
 colormapOf: bmFill
-	<returnTypeC: 'int *'>
+	<returnTypeC:'int *'>
 	^objBuffer + bmFill + GBColormapOffset

@@ -16,8 +16,8 @@ default8To32Table
 		s nextPutAll:'};'.
 	]."
 	| theTable |
-	<returnTypeC: 'unsigned int *'>
-	<var: #theTable declareC: 'static unsigned int theTable[256] = { 
+	<returnTypeC:'unsigned int *'>
+	<var: #theTable declareC:'static unsigned int theTable[256] = { 
 0x0, 0xFF000001, 0xFFFFFFFF, 0xFF808080, 0xFFFF0000, 0xFF00FF00, 0xFF0000FF, 0xFF00FFFF, 
 0xFFFFFF00, 0xFFFF00FF, 0xFF202020, 0xFF404040, 0xFF606060, 0xFF9F9F9F, 0xFFBFBFBF, 0xFFDFDFDF, 
 0xFF080808, 0xFF101010, 0xFF181818, 0xFF282828, 0xFF303030, 0xFF383838, 0xFF484848, 0xFF505050, 

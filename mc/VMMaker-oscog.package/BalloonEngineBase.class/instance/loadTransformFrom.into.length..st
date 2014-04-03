@@ -4,7 +4,7 @@ loadTransformFrom: transformOop into: destPtr length: n
 	defined by destPtr. The transformation is assumed to be either
 	an array or a FloatArray of length n."
 	<inline: false>
-	<var: #destPtr type: 'float *'>
+	<var: #destPtr type:'float *'>
 	transformOop = interpreterProxy nilObject ifTrue:[^false].
 	(interpreterProxy isIntegerObject: transformOop)
 		ifTrue:[^interpreterProxy primitiveFail].

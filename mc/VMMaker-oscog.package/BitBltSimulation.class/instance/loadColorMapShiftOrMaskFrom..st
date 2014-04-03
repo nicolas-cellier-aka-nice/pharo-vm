@@ -1,6 +1,6 @@
 interpreter interface
 loadColorMapShiftOrMaskFrom: mapOop
-	<returnTypeC: 'void *'>
+	<returnTypeC:'void *'>
 	mapOop = interpreterProxy nilObject ifTrue:[^nil].
 	(interpreterProxy isIntegerObject: mapOop) 
 		ifTrue:[interpreterProxy primitiveFail. ^nil].

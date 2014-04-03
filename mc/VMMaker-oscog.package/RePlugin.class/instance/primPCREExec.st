@@ -9,8 +9,8 @@ Apply the regular expression (stored in <pcrePtr> and <extratr>, generated from 
 
 	| searchObject searchBuffer length  result matchSpacePtr matchSpaceSize |
 	<export: true>
-	<var: #searchBuffer type: 'char *'>
-	<var: #matchSpacePtr type: 'int *'>
+	<var:#searchBuffer	type: 'char *'>
+	<var:#matchSpacePtr	type: 'int *'>
 	
 	"Load Parameters"
 	searchObject := interpreterProxy stackObjectValue: 0.	

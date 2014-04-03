@@ -1,8 +1,8 @@
 allocation
 allocateGradientFill: ramp rampWidth: rampWidth isRadial: isRadial
 	| fill fillSize rampPtr |
-	<var: #ramp type: 'int *'>
-	<var: #rampPtr type: 'int *'>
+	<var:#ramp type:'int *'>
+	<var:#rampPtr type:'int *'>
 	fillSize := GGBaseSize + rampWidth.
 	(self allocateObjEntry: fillSize) ifFalse:[^0].
 	fill := objUsed.

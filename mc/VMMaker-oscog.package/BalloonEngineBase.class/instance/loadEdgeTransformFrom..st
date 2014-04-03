@@ -4,7 +4,7 @@ loadEdgeTransformFrom: transformOop
 	Return true if the matrix is not nil, false otherwise"
 	| transform okay |
 	<inline: false>
-	<var: #transform type: 'float *'>
+	<var: #transform type:'float *'>
 	self hasEdgeTransformPut: 0.
 	transform := self edgeTransform.
 	okay := self loadTransformFrom: transformOop into: transform length: 6.

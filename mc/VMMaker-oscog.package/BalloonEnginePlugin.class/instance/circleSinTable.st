@@ -1,9 +1,9 @@
 private
 circleSinTable
 	| theTable |
-	<returnTypeC: 'double *'>
+	<returnTypeC:'double *'>
 	<inline: false>
-	<var: #theTable declareC: 'static double theTable[33] =
+	<var:#theTable declareC:'static double theTable[33] =
 		{0.0, 0.1950903220161282, 0.3826834323650897, 0.555570233019602,
 		0.707106781186547, 0.831469612302545, 0.923879532511287, 0.98078528040323,
 		1.0, 0.98078528040323, 0.923879532511287, 0.831469612302545,

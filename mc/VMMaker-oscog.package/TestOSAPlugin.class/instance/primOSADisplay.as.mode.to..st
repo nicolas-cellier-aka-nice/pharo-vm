@@ -2,7 +2,7 @@ OSA prims
 primOSADisplay: source as: type mode: mode to: result
 
 	|component|
-	component := self primitive: 'primOSADisplay'
+	component := self primitive: 	'primOSADisplay'
 					parameters: #(OSAID DescType SmallInteger AEDesc)
 					receiver:	#ComponentInstance.
 

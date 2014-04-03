@@ -2,7 +2,7 @@ fills-bitmaps
 loadBitsFrom: bmFill
 	"Note: Assumes that the contents of formArray has been checked before"
 	| xIndex formOop bitsOop bitsLen |
-	<returnTypeC: 'int *'>
+	<returnTypeC:'int *'>
 	xIndex := self objectIndexOf: bmFill.
 	xIndex > (interpreterProxy slotSizeOf: formArray) ifTrue:[^nil].
 	formOop := interpreterProxy fetchPointer: xIndex ofObject: formArray.

@@ -7,7 +7,7 @@ computeBezier: index splitAt: param
 	| startX startY viaX viaY endX endY newIndex 
 	leftViaX  leftViaY rightViaX rightViaY sharedX sharedY |
 	<inline: false>
-	<var: #param type: 'double '>
+	<var: #param type:'double '>
 	leftViaX := startX := self bzStartX: index.
 	leftViaY := startY := self bzStartY: index.
 	rightViaX := viaX := self bzViaX: index.

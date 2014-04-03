@@ -2,10 +2,10 @@ fills-bitmaps
 loadBitmapFill: formOop colormap: cmOop tile: tileFlag from: point1 along: point2 normal: point3 xIndex: xIndex
 	"Load the bitmap fill."
 	| bmFill cmSize cmBits bmBits bmBitsSize bmWidth bmHeight bmDepth ppw bmRaster |
-	<var: #cmBits type: 'int *'>
-	<var: #point1 type: 'int *'>
-	<var: #point2 type: 'int *'>
-	<var: #point3 type: 'int *'>
+	<var: #cmBits type:'int *'>
+	<var: #point1 type:'int *'>
+	<var: #point2 type:'int *'>
+	<var: #point3 type:'int *'>
 
 	cmOop == interpreterProxy nilObject ifTrue:[
 		cmSize := 0.

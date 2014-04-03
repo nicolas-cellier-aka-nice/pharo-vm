@@ -4,7 +4,7 @@ fillBitmapSpan: bits from: leftX to: rightX
 	Note: We always start from zero - this avoids using huge bitmap buffers if the bitmap is to be displayed at the very far right hand side and also gives us a chance of using certain bitmaps (e.g., those with depth 32) directly."
 	| x0 x1 x bitX colorMask colorShift baseShift fillValue |
 	<inline: false>
-	<var: #bits type: 'int *'>
+	<var: #bits type:'int *'>
 
 	x0 := leftX.
 	x1 := rightX.

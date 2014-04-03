@@ -8,12 +8,12 @@ loadCompressedShape: points segments: nSegments leftFills: leftFills rightFills:
 	leftValue rightValue widthValue lineFillValue |
 
 	<inline: false>
-	<var: #points type: 'int *'>
-	<var: #leftFills type: 'int *'>
-	<var: #rightFills type: 'int *'>
-	<var: #lineWidths type: 'int *'>
-	<var: #lineFills type: 'int *'>
-	<var: #fillIndexList type: 'int *'>
+	<var: #points type:'int *'>
+	<var: #leftFills type:'int *'>
+	<var: #rightFills type:'int *'>
+	<var: #lineWidths type:'int *'>
+	<var: #lineFills type:'int *'>
+	<var: #fillIndexList type:'int *'>
 
 	nSegments = 0 ifTrue:[^0].
 

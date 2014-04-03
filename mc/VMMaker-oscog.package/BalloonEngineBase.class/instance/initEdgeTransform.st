@@ -2,7 +2,7 @@ other
 initEdgeTransform
 	| transform |
 	<inline: false>
-	<var: #transform type: 'float *'>
+	<var: #transform type:'float *'>
 	transform := self edgeTransform.
 	transform at: 0 put: (self cCoerce: 1.0 to: 'float').
 	transform at: 1 put: (self cCoerce: 0.0 to: 'float').
