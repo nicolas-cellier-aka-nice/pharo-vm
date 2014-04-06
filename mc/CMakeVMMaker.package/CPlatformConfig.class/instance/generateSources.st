@@ -14,7 +14,6 @@ generateSources
 		maker interpreterClass: self interpreterClass.
 		self cogitClass ifNotNil: [:cg | 
 			maker cogitClass: cg.
-			cg initializeWithOptions: (maker instVarNamed: 'optionsDictionary')
 		].
 		
 		maker generateEntire
