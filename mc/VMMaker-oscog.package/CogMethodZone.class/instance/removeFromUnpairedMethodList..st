@@ -14,4 +14,4 @@ removeFromUnpairedMethodList: aCogMethod
 		 prevMethod nextMethod = aCogMethod ifTrue:
 			[prevMethod nextMethod: aCogMethod nextMethod.
 			 ^nil].
-		  prevMethod := prevMethod nextMethod]
+		  prevMethod := aCogMethod nextMethod]

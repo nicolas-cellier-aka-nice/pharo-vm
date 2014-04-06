@@ -2,7 +2,7 @@ C code generator
 emitCAPIExportHeaderOn: aStream
 	"Store prototype declarations for all non-inlined methods on the given stream."
 	| api methodList |
-	api := vmClass translationClass exportAPISelectors.
+	api := (vmClass translationClass exportAPISelectors: self options).
 	methodList := api select: [:s| (methods includesKey: s) or: [(vmClass whichClassIncludesSelector: s) notNil]]
 					  thenCollect:
 						[:s|

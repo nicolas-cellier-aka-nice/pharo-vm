@@ -19,12 +19,11 @@ buildCodeGeneratorForInterpreter: getAPIMethods
 			 interpreterClass := interpreterClass superclass]].
 
 	interpreterClasses addFirst: VMClass.
-	interpreterClasses addAllLast: (self interpreterClass ancilliaryClasses copyWithout: cg vmClass objectMemoryClass).
+	interpreterClasses addAllLast: (((self interpreterClass ancilliaryClasses: optionsDictionary) reject: [:class| class isStructClass]) copyWithout: cg vmClass objectMemoryClass).
 	structClasses := Set new.
-	interpreterClasses do: [:class| structClasses addAll: class ancilliaryStructClasses].
-	(Class superclassOrder: structClasses asArray) do:
+	(cg structClassesForTranslationClasses: interpreterClasses) do:
 		[:structClass|
-		structClass initialize. ].
+		structClass initialize].
 
 	interpreterClasses do:
 		[:ic|

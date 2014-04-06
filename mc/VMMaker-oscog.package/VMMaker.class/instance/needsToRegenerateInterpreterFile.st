@@ -8,9 +8,7 @@ needsToRegenerateInterpreterFile
 		[:objectMemoryClass|
 		classes addAllLast: (objectMemoryClass  withAllSuperclasses copyUpTo: VMClass)].
 	classes copy do:
-		[:class| classes addAllLast: class ancilliaryClasses].
-	classes copy do:
-		[:class| classes addAllLast: class ancilliaryStructClasses].
+		[:class| classes addAllLast: (class ancilliaryClasses: self options)].
 	tStamp := classes inject: 0 into: [:tS :cl| tS max: cl timeStamp].
 
 	"don't translate if the file is newer than my timeStamp"

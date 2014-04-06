@@ -34,10 +34,10 @@ lastPointerOf: oop header: header recordWeakRoot: recordWeakRoot "<Boolean>"
 				 "contexts end at the stack pointer avoiding having to init fields beyond it"
 				 contextSize := coInterpreter fetchStackPointerOf: oop.
 				 self assert: ReceiverIndex + contextSize < (self lengthOf: oop baseHeader: header format: fmt).
-				 ^CtxtTempFrameStart + contextSize * BytesPerWord]].
+				 ^CtxtTempFrameStart + contextSize * BytesPerOop]].
 		 sz := self sizeBitsOfSafe: oop.
 		 ^sz - BaseHeaderSize  "all pointers" ].
 	fmt < 12 ifTrue: [^0]. "no pointers"
 
 	"CompiledMethod: contains both pointers and bytes"
-	^(coInterpreter literalCountOf: oop) * BytesPerWord + BaseHeaderSize
+	^(coInterpreter literalCountOf: oop) + LiteralStart * BytesPerOop

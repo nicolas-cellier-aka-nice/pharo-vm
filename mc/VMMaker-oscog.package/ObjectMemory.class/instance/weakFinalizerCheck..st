@@ -16,7 +16,7 @@ weakFinalizerCheck: oop
 	| listOop listHead |
 
 	listOop := self fetchPointer: 0 ofObject: oop.
-	(self fetchClassOf: listOop) == (self splObj: ClassWeakFinalizer) ifTrue: [
+	(self fetchClassOf: listOop) = (self splObj: ClassWeakFinalizer) ifTrue: [
 		"Fix: put oop into the list, only if it's not already in list"
 		listHead := self fetchPointer: 0 ofObject: listOop.
 		(self isInFinalizationList: oop head: listHead) ifFalse: [

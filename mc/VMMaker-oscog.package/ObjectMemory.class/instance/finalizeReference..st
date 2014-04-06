@@ -17,7 +17,7 @@ finalizeReference: oop
 			"ar 1/18/2005: Added oop < youngStart test to make sure we're not testing
 			objects in non-GCable region. This could lead to a forward reference in
 			old space with the oop pointed to not being marked and thus treated as free."
-			(weakOop == nilObj or: [(self isIntegerObject: weakOop) or:[weakOop < youngStart]])
+			(weakOop = nilObj or: [(self isIntegerObject: weakOop) or:[weakOop < youngStart]])
 
 				ifFalse: ["Check if the object is being collected. 
 					If the weak reference points  

@@ -26,7 +26,6 @@
 		"canAsmLabel",
 		"mustAsmLabel",
 		"properties",
-		"typedByPropagation",
 		"cascadeVariableNumber" ],
 	"name" : "TMethod",
 	"pools" : [

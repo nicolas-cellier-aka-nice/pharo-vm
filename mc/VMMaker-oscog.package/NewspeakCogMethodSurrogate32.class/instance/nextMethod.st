@@ -1,3 +1,5 @@
 accessing
 nextMethod
-	^memory unsignedLongAt: address + 25
+	| v |
+	^(v := memory unsignedLongAt: address + 25) ~= 0 ifTrue:
+		[cogit cCoerceSimple: v to: #'CogMethod *']

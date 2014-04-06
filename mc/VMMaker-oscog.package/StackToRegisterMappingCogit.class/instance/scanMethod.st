@@ -10,7 +10,7 @@ scanMethod
 	<var: #descriptor type: #'BytecodeDescriptor *'>
 	needsFrame := false.
 	inBlock := false.
-
+	prevBCDescriptor := nil.
 	(primitiveIndex > 0
 	 and: [coInterpreter isQuickPrimitiveIndex: primitiveIndex]) ifTrue:
 		[^0].
@@ -39,5 +39,6 @@ scanMethod
 			 targetPC := pc + descriptor numBytes + distance.
 			 latestContinuation := latestContinuation max: targetPC].
 		pc := pc + descriptor numBytes.
-		nExts := descriptor isExtension ifTrue: [nExts + 1] ifFalse: [0] ].
+		nExts := descriptor isExtension ifTrue: [nExts + 1] ifFalse: [0].
+		prevBCDescriptor := descriptor].
 	^numBlocks
