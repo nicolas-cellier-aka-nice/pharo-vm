@@ -15,7 +15,6 @@
 		"getVMMaker" : "eem 12/19/2010 18:40",
 		"implicitReturnTypeFor:" : "eem 2/15/2009 09:12",
 		"initializeMiscConstantsWith:" : "eem 1/4/2013 15:06",
-		"initializePrimitiveErrorCodes" : "LucFabresse 9/27/2013 10:04:12.418",
 		"initializeWithOptions:" : "eem 6/21/2011 13:27",
 		"isAccessor:" : "eem 2/11/2009 17:18",
 		"isCogitClass" : "eem 5/29/2009 09:49",
@@ -65,8 +64,6 @@
 		"oop:isGreaterThan:" : "eem 6/3/2010 09:05",
 		"oop:isGreaterThan:andLessThan:" : "eem 6/3/2010 09:05",
 		"oop:isGreaterThanOrEqualTo:" : "eem 6/3/2010 09:05",
-		"oop:isGreaterThanOrEqualTo:andLessThan:" : "LucFabresse 9/27/2013 10:04:12.418",
-		"oop:isGreaterThanOrEqualTo:andLessThanOrEqualTo:" : "LucFabresse 9/27/2013 10:04:12.418",
 		"oop:isLessThan:" : "eem 6/3/2010 09:05",
 		"oop:isLessThanOrEqualTo:" : "eem 6/3/2010 09:05",
 		"oopForPointer:" : "eem 6/10/2010 16:16",
@@ -80,5 +77,4 @@
 		"storeFloatAtPointer:from:" : "eem 6/3/2010 09:00",
 		"storeSingleFloatAtPointer:from:" : "eem 6/3/2010 09:00",
 		"str:n:cmp:" : "eem 6/27/2012 20:20",
-		"strlen:" : "eem 6/22/2011 11:28",
-		"unalignedAccessError" : "LucFabresse 9/27/2013 10:04:12.418" } }
+		"strlen:" : "eem 6/22/2011 11:28" } }

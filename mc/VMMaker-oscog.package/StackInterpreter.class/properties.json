@@ -109,7 +109,6 @@
 		"VMBasicConstants",
 		"VMMethodCacheConstants",
 		"VMObjectIndices",
-		"VMSpurObjectRepresentationConstants",
 		"VMSqueakV3BytecodeConstants",
 		"VMSqueakV3ObjectRepresentationConstants",
 		"VMStackFrameOffsets" ],
