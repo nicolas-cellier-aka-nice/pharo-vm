@@ -176,9 +176,10 @@ lastSeenKeyBoardModifierDetails,dragInProgress,dragCount,dragItems,windowLogic,s
 
 - (void)swapColors:(void *)bits imageWidth:(int)width clipRect:(CGRect)rect {
     int *bitsAsWord = (int *)bits;
+	int i,j;
     
-    for (int i = rect.origin.y; i < (rect.origin.y + rect.size.height); i++) {
-        for (int j = rect.origin.x; j < (rect.origin.x + rect.size.width); j++) {
+    for ( i = rect.origin.y; i < (rect.origin.y + rect.size.height); i++) {
+        for ( j = rect.origin.x; j < (rect.origin.x + rect.size.width); j++) {
             int pos = (i * width) + j;
             int swap = bitsAsWord[pos];
             int swapBlue = (swap & 0xff) << 16;
