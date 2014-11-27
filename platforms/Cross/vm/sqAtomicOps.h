@@ -64,7 +64,7 @@ static inline uint64_t
 AtomicGet(uint64_t *target)
 {
 	while (true) {
-		uint64_t value = *target;
+		int64 value = *target;
 		if (OSAtomicCompareAndSwap64Barrier(value, value, target))
 			return value;
 	}
@@ -212,7 +212,7 @@ AtomicGet(uint64_t *target)
 #ifdef TARGET_OS_IS_IPHONE
 # define sqCompareAndSwap(var,old,new) OSAtomicCompareAndSwap32(old, new, &var) 
 /* N.B.  This is not atomic in fetching var's old value :( */
-# define sqCompareAndSwapRes(var,new,old,res) do { res = var; if (OSAtomicCompareAndSwap32(old, new, &var)) res = new; } while (0)
+# define sqCompareAndSwapRes(var,old,new,res) do { res = var; if (OSAtomicCompareAndSwap32(old, new, &var)) res = new; } while (0)
 #else
 # define sqCompareAndSwap(var,old,new) \
 	asm volatile ("movl %1, %%eax; lock cmpxchg %2, %0" \

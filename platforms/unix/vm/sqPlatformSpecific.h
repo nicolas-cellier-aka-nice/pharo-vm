@@ -41,13 +41,13 @@
 
 #include "sqMemoryAccess.h"
 
-extern sqInt sqAllocateMemory(sqInt minHeapSize, sqInt desiredHeapSize);
+extern usqInt sqAllocateMemory(usqInt minHeapSize, usqInt desiredHeapSize);
 #define allocateMemoryMinimumImageFileHeaderSize(heapSize, minimumMemory, fileStream, headerSize) \
 sqAllocateMemory(minimumMemory, heapSize)
 extern sqInt sqGrowMemoryBy(sqInt oldLimit, sqInt delta);
 extern sqInt sqShrinkMemoryBy(sqInt oldLimit, sqInt delta);
 extern sqInt sqMemoryExtraBytesLeft(sqInt includingSwap);
-#if COGVM
+#if COGVM || defined(HAVE_NATIVEBOOST)
 extern void sqMakeMemoryExecutableFromTo(unsigned long, unsigned long);
 extern void sqMakeMemoryNotExecutableFromTo(unsigned long, unsigned long);
 

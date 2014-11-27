@@ -19,13 +19,13 @@ addDriver: name sources: aSources generator: cmakeGen externalLibs: extLibs
 			includeDirectories: '${crossDir}/plugins/FilePlugin';
 			includeDirectories: '${targetPlatform}/plugins/B3DAcceleratorPlugin';
 			includeDirectories: '${crossDir}/plugins/B3DAcceleratorPlugin';
-			set: 'LIBRARY_OUTPUT_PATH' toString: self outputDir fullName;
+			set: 'LIBRARY_OUTPUT_PATH' toString: '${outputDir}';
 			addExternalLibraries: extLibs;
 			cmd: 'target_link_libraries' params: name , ' ${LINKLIBS}';
 			cmd: 'set_target_properties' params: name , ' PROPERTIES PREFIX "" SUFFIX "" ' 
 	].
 	
-	(self buildDir / name) ensureDirectory.
+	(self buildDir / name) ensureCreateDirectory.
 	self write: cfg toFile: name , '/', cmakeGen outputFileName.
 	cmakeGen addSubdirectory:  name.
 	
